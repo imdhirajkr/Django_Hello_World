@@ -1,0 +1,40 @@
+1. Let's open up the mysite/urls.py file in your code editor of choice and see what it looks like:
+
+
+-----------------
+2. Orginal Code:
+-----------------
+from django.contrib import admin
+from django.urls import path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+]
+
+
+Change this code to
+
+------------
+3. New Code:
+------------
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
+]
+
+
+------------------
+4. blog/urls.py :
+-----------------
+
+Create a new empty file named urls.py in the blog app directory, and open it in the code editor. 
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.post_list, name='post_list'),
+]

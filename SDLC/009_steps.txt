@@ -1,0 +1,18 @@
+----------
+001_Steps:
+----------
+create one folder named "templates" inside "blog" directory and then 
+create one folder named "blog" and then create file called post_list.html
+
+----------
+002_Code:
+----------
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
+</html>
+
+

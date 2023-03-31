@@ -1,0 +1,57 @@
+----------
+001_Steps:
+----------
+
+Customize your template
+
+
+<h1>A heading</h1> for your most important heading
+<h2>A sub-heading</h2> for a heading at the next level
+<h3>A sub-sub-heading</h3> …and so on, up to <h6>
+<p>A paragraph of text</p>
+<em>text</em> emphasizes your text
+<strong>text</strong> strongly emphasizes your text
+<br> goes to another line (you can't put anything inside br and there's no closing tag)
+<a href="https://djangogirls.org">link</a> creates a link
+<ul><li>first item</li><li>second item</li></ul> makes a list, just like this one!
+<div></div> defines a section of the page
+<nav></nav> defines a set of navigation links
+<article></article> specifies independent, self-contained content
+<section></section> defines a section in a document
+<header></header> specifies a header for a document or section
+<main></main> specifies the main content of a document
+<aside></aside> defines some content aside from the content it is placed in (like a sidebar)
+<footer></footer> defines a footer for a document or section
+<time></time> defines a specific time (or datetime)
+
+
+----------
+002_Code:
+----------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog App</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Blog App</a></h1>
+        </header>
+
+        <article>
+            <time>published: 18.06.2023, 12:14</time>
+            <h2><a href="">My first post</a></h2>
+            <p>Hello Everyone,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae eum tenetur quod nemo aut, vel alias at modi dolore neque eius eligendi voluptatibus repellat, corrupti eos minus harum dolor quisquam.</p>
+        </article>
+
+        <article>
+            <time>published: 24.01.2022, 12:14</time>
+            <h2><a href="">My second post</a></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem suscipit iure nihil? Cum voluptatem molestias nam, officia itaque doloremque. Maiores dolores mollitia fugit architecto commodi facere ab nemo omnis et.</p>
+        </article>
+    </body>
+</html>
+
+
+

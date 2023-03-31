@@ -1,0 +1,15 @@
+----------
+001_Steps:
+----------
+Add this code in the post_list.html
+
+----------
+002_Steps:
+----------
+
+{% load static %}
+
+----------
+003_Steps:
+----------
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">

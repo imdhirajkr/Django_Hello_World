@@ -1,0 +1,11 @@
+----------
+001_Steps:
+----------
+1. Add this code in blog/views.py
+
+----------
+002_Code:
+----------
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})

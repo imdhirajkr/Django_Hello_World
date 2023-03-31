@@ -1,0 +1,49 @@
+-- Creating a blog post model
+-- In the blog/models.py file we define all objects called Models so this is a place in which we will define our blog post.
+
+-- Let's open blog/models.py in the code editor, remove everything from it, and write code like this:
+
+----- 
+Code:
+-----
+
+from django.conf import settings
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+
+
+
+------------
+Explanation:
+------------
+
+1. models.CharField – this is how you define text with a limited number of characters.
+
+2. models.TextField – this is for long text without a limit. Sounds ideal for blog post content, right?
+
+3.models.DateTimeField – this is a date and time.
+
+4.models.ForeignKey – this is a link to another model.
+
+5. 
+
+This is a method definition for the "str" special method in a Python class. When an instance of this class is passed to the "print" function or is converted to a string using the "str" built-in function, the code inside this method will be executed.
+
+In this specific implementation, the "str" method returns the value of the "title" attribute of the object. This means that when the object is converted to a string, it will display the value of the "title" attribute.
+
+For example, if the class is a Book class and an instance of this class has the title "The Great Gatsby", calling "print(my_book)" or "str(my_book)" would return the string "The Great Gatsby".

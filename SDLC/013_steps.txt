@@ -1,0 +1,12 @@
+----------
+001_Steps:
+----------
+-> blog/templates/blog/post_list.html
+
+----------
+002_Steps:
+----------
+
+{% for post in posts %}
+    {{ post }}
+{% endfor %}

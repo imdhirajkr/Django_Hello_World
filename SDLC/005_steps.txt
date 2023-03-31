@@ -1,0 +1,13 @@
+--------
+Command:
+--------
+
+1. python manage.py createsuperuser
+
+------------
+Description:
+------------
+
+-> Django provides us Admin Panel for it’s users. 
+-> So we need not worry about creating a separate Admin page or providing authentication feature as Django provides us that feature. 
+-> Before using this feature, you must have migrated your project, otherwise the superuser database will not be created.

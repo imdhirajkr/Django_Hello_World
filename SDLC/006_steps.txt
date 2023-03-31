@@ -1,0 +1,22 @@
+------------
+Explanation:
+-------------
+1. To add, edit and delete the posts we've just modeled, we will use Django admin.
+
+2. Let's open the blog/admin.py file in the code editor and replace its contents with this:
+
+-----
+Code:
+-----
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+
+----------
+003_Step :
+----------
+1. Now access the admin page by
+127.0.0.1:8000/admin
+
+2. Add some post in the backend

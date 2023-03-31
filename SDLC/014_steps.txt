@@ -1,0 +1,19 @@
+----------
+001_Steps:
+----------
+-> Add this code to blog/templates/blog/post_list.html
+
+----------
+002_Steps:
+----------
+<header>
+    <h1><a href="/">Django  Blog</a></h1>
+</header>
+
+{% for post in posts %}
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
